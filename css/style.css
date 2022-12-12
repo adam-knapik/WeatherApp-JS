@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background-image: url("../img/clouds.jpg");
+    background-color: #fff;
+   
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 70%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 5em;
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+
+.search {
+    width: 70%;
+    text-align: center;
+}
+
+.search button {
+    height: 1;
+    border: 0;
+    border-radius: 50%;
+    padding: 5px;
+    outline: 0;
+}
+
+#weather-search-bar {
+    width: 50%;
+    padding: 7px 0;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    outline: 0;
+    font-family: inherit;
+    font-size: 1.3rem;
+    color: #fff;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.weather {
+    width: 50%;
+    text-align: center;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 1024px) {
+    .content {
+        width: 90%;
+    }
+
+    .search {
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .content h1 {
+        font-size: 1.7em;
+    }
+    .search {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content h1 {
+        font-size: 1.2em;
+    }
+    .search {
+        width: 95%;
+    }
+}
